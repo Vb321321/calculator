@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculater.css">
+  </head>
+  
+<body>
+  <div id="calculator">
+    <h1 id="name">Calculater</h1>
+    <input type="text" id="display">
+    <div class="containor">
+      <button class="button"       onclick="calculater='';document.querySelector('#display').value=calculater;">C</button>
+      <button class="button"      onclick="calculater=calculater+'1';document.querySelector('#display').value=calculater;">1</button>
+      <button class="button" 
+onclick="calculater=calculater+'2';document.querySelector('#display').value=calculater;">2</button>
+      <button class="button"       onclick="calculater=calculater+'+';document.querySelector('#display').value=calculater;">+</button>
+      <button class="button"      onclick="calculater=calculater+'3';document.querySelector('#display').value=calculater;">3</button>
+      <button class="button"       onclick="calculater=calculater+'4';document.querySelector('#display').value=calculater;">4</button>
+      <button class="button"      
+onclick="calculater=calculater+'-';document.querySelector('#display').value=calculater;">-</button>
+      <button class="button"       onclick="calculater=calculater+'5';document.querySelector('#display').value=calculater;">5</button>
+      <button class="button"       onclick="calculater=calculater+'6';document.querySelector('#display').value=calculater;">6</button>
+      <button class="button"       onclick="calculater=calculater+'*';document.querySelector('#display').value=calculater;">*</button>
+            <button class="button"      onclick="calculater=calculater+'7';document.querySelector('#display').value=calculater;">7</button>
+      <button class="button"       onclick="calculater=calculater+'8';document.querySelector('#display').value=calculater;">8</button>
+      <button class="button"       onclick="calculater=calculater+'/';document.querySelector('#display').value=calculater;">/</button>
+      <button class="button"       
+onclick=" calculater=eval(calculater);document.querySelector('#display').value=calculater;">=</button>
+      <button class="button"       onclick="calculater=calculater+'9';document.querySelector('#display').value=calculater;">9</button>
+      <button class="button"       onclick="calculater=calculater+'0';document.querySelector('#display').value=calculater;">0</button>
+      <button class="button"       onclick="calculater=calculater+'.';document.querySelector('#display').value=calculater;">.</button>
+    </div>
+  </div>
+  <script>
+    let calculater='';
+    document.querySelector('#display').value=calculater;
+  </script>
+</body>
+</html>
